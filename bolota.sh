@@ -1,0 +1,2 @@
+echo "Oláaaaaaaaa mundo"
+hostname
