@@ -12,11 +12,10 @@ pipeline {
                   
                   script {
                         sh '''
-                        touch bolota.sh
-                        echo "hostname" >> bolota.sh
-                        echo "echo 'Olá mundo !!!'"
-                        chmod +x bolota.sh
-                        packer --version
+                        
+                        
+                        echo "echo 'Olahhhh mundo !!!'"
+                        
 
                         '''
              
@@ -37,10 +36,6 @@ pipeline {
               script {
                     sh '''
                     ./bolota.sh
-                    # terraform --version
-                    # ansible --version
-                    # packer --version
-
                     '''
          
                   }
