@@ -33,15 +33,14 @@ pipeline {
 
             steps {
               
-              script {
-                withCredentials([
+              withCredentials([
                 usernamePassword(credentialsId: 'seraph', passwordVariable: 'GIT_PASSWORD', usernameVariable: 'GIT_USERNAME')
-              ])
-                    sh '''
-                    ./bolota.sh
-                    '''
+              ]) {
+                  sh '''
+                  ./bolota.sh
+                  '''
          
-                  }
+                 }
 
               }
             }
